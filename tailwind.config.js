@@ -11,6 +11,9 @@ module.exports = {
         'secondBlack': '#2E2E2E',
         'secondary': '#FDC55E'
       },
+      backgroundImage: {
+        'headerBg': 'linear-gradient(180deg, rgba(245, 71, 72, 0.06) 0%, rgba(245, 71, 72, 0.00) 100%)',
+      },
       borderRadius: {
         'large': '6.25rem'
       },
