@@ -14,7 +14,7 @@ import Slider from './slider'
 export default function HeroSection() {
     return (
         <section className='flex flex-col-reverse lg:flex-row lg:gap-x-16 relative z-10'>
-            <div className='absolute right-0 z-20'>
+            <div className='hidden lg:block absolute right-0 z-20'>
                 <SideDottedLine />
             </div>
             <div className='basis-1/2 pt-14'>
@@ -32,7 +32,7 @@ export default function HeroSection() {
                         <img src={orange} alt="orange icon" className='w-full h-full object-contain' />
                     </div>
                 </div>
-                <div className='me-7'>
+                <div className='lg:me-7'>
                     <p className='text-xl xlg:text-2xl tracking-tight mb-7'>Best cooks and best delivery guys all at your service. Hot tasty food will reach you in 60 minutes.</p>
                     <div className='border border-firstBlack rounded-large overflow-hidden flex items-center px-4 mb-9 bg-white'>
                         <BiSearch className='text-2xl' />

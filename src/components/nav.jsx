@@ -6,7 +6,7 @@ import { LuMenu } from 'react-icons/lu'
 
 export default function Nav() {
     return (
-        <nav className='flex justify-between items-center mb-8 relative z-10'>
+        <nav className='flex justify-between items-center lg:mb-8 relative z-10'>
             <div className='w-[4.875rem] h-[7.563rem] ms-1.5'>
                 <img src={Logo} alt="food hut logo" className='w-full h-full object-contain' />
             </div>
@@ -22,8 +22,8 @@ export default function Nav() {
                     <FancyButton content={'Download App'} background={'bg-primary'} color={'text-white'} />
                 </div>
             </div>
-            <div className='block lg:hidden'>
-                <LuMenu className='text-4xl' />
+            <div className='block lg:hidden pe-6'>
+                <LuMenu className='text-4xl mt-3' />
             </div>
         </nav>
     )
