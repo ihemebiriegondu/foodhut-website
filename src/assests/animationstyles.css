@@ -4,11 +4,11 @@
 
 .path {
     stroke-dasharray: 300;
-    stroke-dashoffset: 300;
+    stroke-dashoffset: 0;
     animation-name: dash;
-    animation-duration: 1.9s;
+    animation-duration: 1.5s;
     animation-timing-function: ease-in-out;
-    animation-iteration-count: infinite;
+    animation-iteration-count: 1;
 }
 
 @keyframes dash {
@@ -22,7 +22,7 @@
 }
 
 .top-arrow-head {
-    animation: arrow 0s 1.4s alternate;
+    animation: arrow 0s 0.9s forwards;
     animation-iteration-count: infinite;
     visibility: hidden;
 }
@@ -34,5 +34,70 @@
 
     to {
         visibility: visible;
+    }
+}
+
+/*second arrow svg*/
+.dashed2 {
+    stroke-dasharray: 10;
+}
+
+.path2 {
+    stroke-dasharray: 1000;
+    stroke-dashoffset: 1000;
+    animation: dashTwo 4s ease-in-out 0.8s infinite;
+}
+
+@keyframes dashTwo {
+    from {
+        stroke-dashoffset: 1000;
+    }
+
+    to {
+        stroke-dashoffset: 0;
+    }
+}
+
+.arrowhead2 {
+    bottom: 0;
+    left: 0;
+    right: auto;
+    visibility: hidden;
+    display: block;
+    animation: moveArrow 4s ease-in-out 0.8s infinite;
+
+}
+
+@keyframes moveArrow {
+    0% {
+        bottom: 0;
+        left: 0;
+        right: auto;
+        visibility: hidden;
+        display: none;
+    }
+
+    20% {
+        bottom: 0;
+        left: 0;
+        right: auto;
+        visibility: hidden;
+        display: none;
+    }
+
+    55% {
+        top: 0;
+        left: auto;
+        right: 48px;
+        visibility: hidden;
+        display: none;
+    }
+
+    100% {
+        top: 0;
+        left: auto;
+        right: 48px;
+        visibility: visible;
+        display: block;
     }
 }

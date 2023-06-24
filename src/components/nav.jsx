@@ -4,7 +4,7 @@ import FancyButton from './fancyButton'
 
 export default function Nav() {
     return (
-        <nav className='flex justify-between items-center mb-8'>
+        <nav className='flex justify-between items-center mb-8 relative z-10'>
             <div className='w-[4.875rem] h-[7.563rem] ms-1.5'>
                 <img src={Logo} alt="food hut logo" className='w-full h-full object-contain' />
             </div>
