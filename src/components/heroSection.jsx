@@ -13,7 +13,7 @@ import Slider from './slider'
 
 export default function HeroSection() {
     return (
-        <section className='flex gap-x-16 relative z-10'>
+        <section className='flex flex-col-reverse lg:flex-row lg:gap-x-16 relative z-10'>
             <div className='absolute right-0 z-20'>
                 <SideDottedLine />
             </div>
@@ -23,7 +23,7 @@ export default function HeroSection() {
                     <p className='font-inter text-sm'>People Trust us</p>
                 </div>
                 <div className='mb-7 relative'>
-                    <h1 className='text-6xl font-extrabold leading-none text-secondBlack'>We're <span className='text-primary'>Serious</span> For <span className='text-primary'>Food</span> & <span className='text-secondary'>Delivery</span>.</h1>
+                    <h1 className='text-5xl xlg:text-6xl font-extrabold leading-none text-secondBlack'>We're <span className='text-primary'>Serious</span> For <span className='text-primary'>Food</span> & <span className='text-secondary'>Delivery</span>.</h1>
                     <div className='flex justify-end pe-28 pt-3'>
                         <img src={scratch} alt="scratch icon" />
                     </div>
@@ -33,7 +33,7 @@ export default function HeroSection() {
                     </div>
                 </div>
                 <div className='me-7'>
-                    <p className='text-2xl tracking-tight mb-7'>Best cooks and best delivery guys all at your service. Hot tasty food will reach you in 60 minutes.</p>
+                    <p className='text-xl xlg:text-2xl tracking-tight mb-7'>Best cooks and best delivery guys all at your service. Hot tasty food will reach you in 60 minutes.</p>
                     <div className='border border-firstBlack rounded-large overflow-hidden flex items-center px-4 mb-9 bg-white'>
                         <BiSearch className='text-2xl' />
                         <input type="text" placeholder='Search food' className='w-full py-4 px-3 outline-0 border-0 placeholder:firstBlack' />
@@ -52,7 +52,7 @@ export default function HeroSection() {
             </div>
             <div className='basis-1/2 relative z-20'>
                 <div className='relative'>
-                    <img src={heroImage} alt="" />
+                    <img src={heroImage} alt="hero img" className='mx-auto' />
                 </div>
                 <div className='absolute -right-12 bottom-1/4'>
                     <img src={mint} alt="mint icon" />

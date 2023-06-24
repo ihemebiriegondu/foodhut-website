@@ -2,6 +2,8 @@ import React from 'react'
 import Logo from '../assests/little-icons/Logo (1).png'
 import FancyButton from './fancyButton'
 
+import { LuMenu } from 'react-icons/lu'
+
 export default function Nav() {
     return (
         <nav className='flex justify-between items-center mb-8 relative z-10'>
@@ -9,8 +11,8 @@ export default function Nav() {
                 <img src={Logo} alt="food hut logo" className='w-full h-full object-contain' />
             </div>
 
-            <div className='flex items-center gap-x-24'>
-                <div className='flex gap-x-12'>
+            <div className='hidden lg:flex items-center lg:gap-x-12 xlg:gap-x-14 xl:gap-x-24'>
+                <div className='flex lg:gap-x-8 xlg:gap-x-12 xl:gap-x-12'>
                     <a href="/">Today special offers</a>
                     <a href="/">Why FoodHut</a>
                     <a href="/">Our Menu</a>
@@ -19,6 +21,9 @@ export default function Nav() {
                 <div>
                     <FancyButton content={'Download App'} background={'bg-primary'} color={'text-white'} />
                 </div>
+            </div>
+            <div className='block lg:hidden'>
+                <LuMenu className='text-4xl' />
             </div>
         </nav>
     )

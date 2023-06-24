@@ -20,6 +20,9 @@ module.exports = {
       fontFamily: {
         'inter': ['Inter', 'sans-serif']
       },
+      screens: {
+        'xlg': '1120px'
+      }
     },
   },
   plugins: [],

@@ -11,7 +11,7 @@ export default function Header() {
                 <img src={spiralIcon} alt="spiral icon" />
             </div>
             <Nav />
-            <div className='absolute top-16 left-52'>
+            <div className='hidden lg:block absolute lg:top-20 xlg:top-16 left-52'>
                 <TopDottedLine />
             </div>
             <HeroSection />
