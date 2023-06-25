@@ -23,15 +23,20 @@ export default function HeroSection() {
                     <p className='font-inter text-sm'>People Trust us</p>
                 </div>
                 <div className='mb-7 relative'>
-                    <h1 className='text-5xl xlg:text-6xl font-extrabold leading-none text-secondBlack'>We're <span className='text-primary'>Serious</span> For <span className='text-primary'>Food</span> & <span className='text-secondary'>Delivery</span>.</h1>
-                    <div className='flex justify-end pe-28 pt-3'>
-                        <img src={scratch} alt="scratch icon" />
-                    </div>
-
+                    <h1 className='text-5xl xlg:text-6xl font-extrabold leading-none text-secondBlack flex flex-wrap gap-x-3'>We're <span className='text-primary'>Serious</span> For <span className='text-primary'>Food</span> &
+                        <p className='text-secondary inline'>
+                            <p className='flex flex-col'>
+                                <span> Delivery<span className='text-secondBlack'>.</span></span>
+                                <div className='flex justify-end pt-3'>
+                                    <img src={scratch} alt="scratch icon" />
+                                </div>
+                            </p>
+                        </p>
+                    </h1>
                     <div className='w-[84px] h-[74px] absolute top-0 right-0'>
                         <img src={orange} alt="orange icon" className='w-full h-full object-contain' />
                     </div>
-                </div>
+                </div >
                 <div className='lg:me-7'>
                     <p className='text-xl xlg:text-2xl tracking-tight mb-7'>Best cooks and best delivery guys all at your service. Hot tasty food will reach you in 60 minutes.</p>
                     <div className='border border-firstBlack rounded-large overflow-hidden flex items-center px-4 mb-9 bg-white'>
@@ -49,7 +54,7 @@ export default function HeroSection() {
                 <div className='mt-16 flex flex-col items-start'>
                     <Slider />
                 </div>
-            </div>
+            </div >
             <div className='basis-1/2 relative z-20'>
                 <div className='relative'>
                     <img src={heroImage} alt="hero img" className='mx-auto' />
@@ -58,6 +63,6 @@ export default function HeroSection() {
                     <img src={mint} alt="mint icon" />
                 </div>
             </div>
-        </section>
+        </section >
     )
 }

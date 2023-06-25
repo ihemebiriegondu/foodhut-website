@@ -2,6 +2,8 @@ import React from 'react'
 import Nav from './nav'
 import HeroSection from './heroSection'
 import TopDottedLine from './topDottedLine'
+import MobileSideDottedLine from './mobileSideDottedLine'
+
 import spiralIcon from '../assests/little-icons/Group 8438.png'
 
 export default function Header() {
@@ -13,6 +15,9 @@ export default function Header() {
             <Nav />
             <div className='hidden lg:block absolute lg:top-20 xlg:top-16 left-52'>
                 <TopDottedLine />
+            </div>
+            <div className='block lg:hidden absolute top-32 sm:top-44 md:top-52 right-14 sm:right-28 md:right-40 z-10'>
+                <MobileSideDottedLine />
             </div>
             <HeroSection />
         </header>

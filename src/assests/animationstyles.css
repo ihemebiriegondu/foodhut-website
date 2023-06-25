@@ -101,3 +101,49 @@
         display: block;
     }
 }
+
+
+/*mobile view of the second arrow*/
+.arrowhead3 {
+    bottom: 0;
+    left: 0;
+    right: auto;
+    visibility: hidden;
+    display: block;
+    animation: moveArrow2 4.07s ease-in-out 0.5s infinite;
+
+}
+
+@keyframes moveArrow2 {
+    0% {
+        bottom: 0;
+        left: 0;
+        right: auto;
+        visibility: hidden;
+        display: none;
+    }
+
+    20% {
+        bottom: 0;
+        left: 0;
+        right: auto;
+        visibility: hidden;
+        display: none;
+    }
+
+    55% {
+        top: 0;
+        left: auto;
+        right: 12px;
+        visibility: hidden;
+        display: none;
+    }
+
+    100% {
+        top: 0;
+        left: auto;
+        right: 12px;
+        visibility: visible;
+        display: block;
+    }
+}
