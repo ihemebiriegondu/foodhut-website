@@ -1,6 +1,6 @@
 import React from 'react'
 import { RiArrowDropDownLine } from 'react-icons/ri'
-import '../assests/animationstyles.css'
+import '../../assests/animationstyles.css'
 
 export default function TopDottedLine() {
     //#f547480f

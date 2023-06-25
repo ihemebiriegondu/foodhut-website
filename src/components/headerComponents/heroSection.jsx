@@ -1,19 +1,19 @@
 import React from 'react'
-import loveIcon from '../assests/little-icons/Group 8426.png'
 import { BiSearch } from 'react-icons/bi'
 
-import FancyButton from './fancyButton'
+import FancyButton from '../fancyButton'
 import SideDottedLine from './sideDottedLine'
 
-import heroImage from '../assests/images/Group 8477.png'
-import scratch from '../assests/little-icons/Decore.png'
-import orange from '../assests/little-icons/Orange.png'
-import mint from '../assests/little-icons/Mint.png'
+import heroImage from '../../assests/images/Group 8477.png'
+import loveIcon from '../../assests/little-icons/Group 8426.png'
+import scratch from '../../assests/little-icons/Decore.png'
+import orange from '../../assests/little-icons/Orange.png'
+import mint from '../../assests/little-icons/Mint.png'
 import Slider from './slider'
 
 export default function HeroSection() {
     return (
-        <section className='flex flex-col-reverse lg:flex-row lg:gap-x-16 relative z-10'>
+        <section className='flex flex-col-reverse md:flex-row items-center lg:items-start lg:gap-x-16 relative z-10'>
             <div className='hidden lg:block absolute right-0 z-20'>
                 <SideDottedLine />
             </div>

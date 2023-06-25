@@ -1,5 +1,5 @@
 import React from 'react'
-import '../assests/animationstyles.css'
+import '../../assests/animationstyles.css'
 
 export default function SideDottedLine() {
     return (
