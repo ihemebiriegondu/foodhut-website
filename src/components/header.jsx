@@ -4,7 +4,7 @@ import HeroSection from './headerComponents/heroSection'
 import TopDottedLine from './headerComponents/topDottedLine'
 import MobileSideDottedLine from './headerComponents/mobileSideDottedLine'
 
-import spiralIcon from '../assests/little-icons/Group 8438.png'
+import spiralIcon from '../assests/little-decors/Group 8438.png'
 
 export default function Header() {
     return (

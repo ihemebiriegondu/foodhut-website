@@ -1,5 +1,9 @@
 import React from 'react'
 import chefImage from '../assests/images/Group 8480.png'
+import onlineOrderIcon from '../assests/images/image 15.png'
+import timerangeIcon from '../assests/images/image 17.png'
+import bookingIcon from '../assests/images/image 18.png'
+import FancyButton from './fancyButton'
 
 export default function ThirdSection() {
     return (
@@ -14,8 +18,38 @@ export default function ThirdSection() {
                     <h2 className='text-5xl xlg:text-6xl font-bold text-black mb-5 flex flex-wrap gap-x-3 gap-y-2'>We are <span className='text-primary'>more</span> than <span className='text-secondary'>multiple</span> service</h2>
                 </div>
                 <p className='text-lg opacity-80 mb-7'>This is a type of resturent which typically serves food and drink, in addition to light refreshments such as baked goods or snacks. The term comes frome the rench word meaning food</p>
-                <div>
-                    
+                <div className='flex gap-x-20'>
+                    <div className='flex flex-col gap-y-7'>
+                        <div className='flex items-center gap-x-2.5'>
+                            <img src={onlineOrderIcon} alt="online order icon" />
+                            <p>Online Order</p>
+                        </div>
+                        <div className='flex items-center gap-x-2.5'>
+                            <img src={bookingIcon} alt="online order icon" />
+                            <p>Pre-Reservation</p>
+                        </div>
+                        <div className='flex items-center gap-x-2.5'>
+                            <img src={bookingIcon} alt="online order icon" />
+                            <p>Super Chef</p>
+                        </div>
+                    </div>
+                    <div className='flex flex-col gap-y-7'>
+                        <div className='flex items-center gap-x-2.5'>
+                            <img src={timerangeIcon} alt="online order icon" />
+                            <p>24/7 Service</p>
+                        </div>
+                        <div className='flex items-center gap-x-2.5'>
+                            <img src={bookingIcon} alt="online order icon" />
+                            <p>Organized Foodhut Place</p>
+                        </div>
+                        <div className='flex items-center gap-x-2.5'>
+                            <img src={bookingIcon} alt="online order icon" />
+                            <p>Clean Kitchen</p>
+                        </div>
+                    </div>
+                </div>
+                <div className='mt-10'>
+                    <FancyButton content={'About Us'} color={'text-white'} background={'bg-primary'} />
                 </div>
             </div>
         </section>
