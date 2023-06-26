@@ -1,5 +1,5 @@
 import React from 'react'
-import Logo from '../../assests/little-icons/Logo (1).png'
+import Logo from '../../assests/little-decors/Logo (1).png'
 import FancyButton from '../fancyButton'
 
 import { LuMenu } from 'react-icons/lu'

@@ -5,10 +5,10 @@ import FancyButton from '../fancyButton'
 import SideDottedLine from './sideDottedLine'
 
 import heroImage from '../../assests/images/Group 8477.png'
-import loveIcon from '../../assests/little-icons/Group 8426.png'
-import scratch from '../../assests/little-icons/Decore.png'
-import orange from '../../assests/little-icons/Orange.png'
-import mint from '../../assests/little-icons/Mint.png'
+import loveIcon from '../../assests/little-decors/Group 8426.png'
+import scratch from '../../assests/little-decors/Decore.png'
+import orange from '../../assests/little-decors/Orange.png'
+import mint from '../../assests/little-decors/Mint.png'
 import Slider from './slider'
 
 export default function HeroSection() {
