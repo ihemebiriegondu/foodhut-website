@@ -10,7 +10,7 @@ import mobileDownload2 from '../assests/images/Mobile app store badge (1).png'
 
 export default function FifthSection() {
     return (
-        <section className='px-6 md:px-10 lg:px-12 xlg:px-16 flex flex-col-reverse md:flex-row md:gap-x-6 lg:gap-x-16 pb-32 md:pb-48 lg:pb-52'>
+        <section className='px-6 md:px-10 lg:px-12 xlg:px-16 flex flex-col-reverse md:flex-row md:gap-x-6 lg:gap-x-16 pb-32 md:pb-20 lg:pb-0'>
             <div className='md:basis-3/5'>
                 <div className=''>
                     <h2 className='leading-10 xsm:leading-[3.5rem] xlg:leading-[4.5rem] text-4xl xsm:text-5xl xlg:text-6xl font-bold text-black mb-12'>It’s Now <span className='text-primary'>More Easy</span> to <span className='text-secondary'>Order</span> by Our Mobile <span className='text-primary'>App</span></h2>
