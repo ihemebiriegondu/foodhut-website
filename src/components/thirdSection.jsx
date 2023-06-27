@@ -4,12 +4,16 @@ import onlineOrderIcon from '../assests/images/image 15.png'
 import timerangeIcon from '../assests/images/image 17.png'
 import bookingIcon from '../assests/images/image 18.png'
 import FancyButton from './fancyButton'
+import ArrowVector from './section3Components/arrowVector'
 
 export default function ThirdSection() {
     return (
-        <section className='pe-6 md:pe-10 lg:pe-12 xlg:pe-16 relative flex gap-x-16'>
+        <section className='pe-6 md:pe-10 lg:pe-12 xlg:pe-16 relative flex flex-col lg:flex-row gap-x-16'>
+            <div className='absolute left-[425px] -top-2 z-20'>
+                <ArrowVector />
+            </div>
             <div className='basis-2/5'>
-                <div className='-mt-72 -me-60'>
+                <div className='-mt-72 me:0 lg:-me-60'>
                     <img src={chefImage} alt="chef img" />
                 </div>
             </div>

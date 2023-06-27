@@ -4,7 +4,7 @@ import ThirdSection from "./components/thirdSection";
 
 function App() {
   return (
-    <div className="">
+    <div className="scroll-smooth">
       <Header />
       <SecondSection />
       <ThirdSection />

@@ -147,3 +147,31 @@
         display: block;
     }
 }
+
+/* third dotted line svg*/
+.dashed3 {
+    stroke-dasharray: 10;
+}
+
+.path3 {
+    stroke-dasharray: 1000;
+    stroke-dashoffset: 1000;
+    fill: none;
+    animation: dashThree 8s ease-in-out 0.8s infinite;
+}
+
+@keyframes dashThree {
+    0% {
+        stroke-dashoffset: 1000;
+        fill: none;
+    }
+
+    30% {
+        fill: #FDC55E;
+    }
+
+    100% {
+        stroke-dashoffset: 0;
+        fill: #FDC55E;
+    }
+}

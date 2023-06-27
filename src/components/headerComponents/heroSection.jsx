@@ -24,14 +24,14 @@ export default function HeroSection() {
                 </div>
                 <div className='mb-7 relative'>
                     <h1 className='text-5xl xlg:text-6xl font-extrabold leading-none text-secondBlack flex flex-wrap gap-x-3'>We're <span className='text-primary'>Serious</span> For <span className='text-primary'>Food</span> &
-                        <p className='text-secondary inline'>
-                            <p className='flex flex-col'>
+                        <span className='text-secondary inline'>
+                            <span className='flex flex-col'>
                                 <span> Delivery<span className='text-secondBlack'>.</span></span>
-                                <div className='flex justify-end pt-3'>
+                                <p className='flex justify-end pt-3'>
                                     <img src={scratch} alt="scratch icon" />
-                                </div>
-                            </p>
-                        </p>
+                                </p>
+                            </span>
+                        </span>
                     </h1>
                     <div className='w-[84px] h-[74px] absolute top-0 right-0'>
                         <img src={orange} alt="orange icon" className='w-full h-full object-contain' />
