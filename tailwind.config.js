@@ -27,7 +27,8 @@ module.exports = {
         '17.5': '178.687deg'
       },
       screens: {
-        'xlg': '1120px'
+        'xlg': '1120px',
+        'xsm': '440px'
       }
     },
   },
