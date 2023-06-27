@@ -1,19 +1,17 @@
 import React from 'react'
-import { Swiper, SwiperSlide, useSwiper } from 'swiper/react';
+import { Swiper, SwiperSlide} from 'swiper/react';
 import { Pagination, A11y } from 'swiper';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import 'swiper/css/scrollbar';
 
-import { MdNavigateNext } from 'react-icons/md'
 import FoodCards from '../foodCards'
 
 import kebab from '../../assests/images/unsplash_UC0HZdUitWY.png'
 import reviewImg1 from '../../assests/images/unsplash_7Sz71zuuW4k.png'
 
 export default function FoodSwiper1() {
-    const swiper = useSwiper();
 
     const todayOffers = [
         { foodImage: kebab, orderAmount: '105', rating: '4.5', testimonialImage1: reviewImg1, testimonialImage2: reviewImg1, testimonialImage3: reviewImg1, foodName: 'Kebab', foodDescription: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry' },
@@ -63,9 +61,6 @@ export default function FoodSwiper1() {
                     }
                 </div>
             </Swiper>
-            {/*<button onClick={() => { swiper.slideNext() }} className='border-0 outline-0 bg-secondary/50 shadow-md hover:shadow-lg transition-shadow duration-300 ease-in-out rounded-full p-2 absolute z-50 right-0 top-1/2 hover:cursor-pointer'>
-                <MdNavigateNext className='text-primary text-2xl' />
-            </button>*/}
         </div>
     )
 }
