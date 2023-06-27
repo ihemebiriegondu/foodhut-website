@@ -1,5 +1,6 @@
 import React from 'react'
 import chefImage from '../assests/images/Group 8480.png'
+import mobileChefImage from '../assests/images/Group 8472 (1).png'
 import onlineOrderIcon from '../assests/images/image 15.png'
 import timerangeIcon from '../assests/images/image 17.png'
 import bookingIcon from '../assests/images/image 18.png'
@@ -8,21 +9,24 @@ import ArrowVector from './section3Components/arrowVector'
 
 export default function ThirdSection() {
     return (
-        <section className='pe-6 md:pe-10 lg:pe-12 xlg:pe-16 relative flex flex-col lg:flex-row gap-x-16'>
-            <div className='absolute left-[425px] -top-2 z-20'>
+        <section className='md:pe-10 lg:pe-12 xlg:pe-16 relative flex flex-col md:flex-row lg:gap-x-16 pb-32 md:pb-48 lg:pb-52'>
+            <div className='hidden md:block absolute md:left-[240px] md:-top-12 lg:left-[340px] lg:-top-20 xlg:left-[370px] xlg:-top-14 xl:left-[425px] xl:-top-2 lg:z-20'>
                 <ArrowVector />
             </div>
-            <div className='basis-2/5'>
-                <div className='-mt-72 me:0 lg:-me-60'>
+            <div className='md:basis-2/5'>
+                <div className='-mt-72 me-0 lg:-me-60 -mb-80 hidden lg:block'>
                     <img src={chefImage} alt="chef img" />
                 </div>
+                <div className='-mt-56 sm:-mt-72 me-0 -mb-72 block lg:hidden'>
+                    <img src={mobileChefImage} alt="chef img" className='-me-20 md:me-0' />
+                </div>
             </div>
-            <div className='basis-3/5 pt-32'>
-                <div className='w-3/4'>
+            <div className='md:basis-3/5 md:pt-16 xlg:pt-24 xl:pt-32 md:px-0 px-6'>
+                <div className='w-full xl:w-3/4'>
                     <h2 className='text-5xl xlg:text-6xl font-bold text-black mb-5 flex flex-wrap gap-x-3 gap-y-2'>We are <span className='text-primary'>more</span> than <span className='text-secondary'>multiple</span> service</h2>
                 </div>
                 <p className='text-lg opacity-80 mb-7'>This is a type of resturent which typically serves food and drink, in addition to light refreshments such as baked goods or snacks. The term comes frome the rench word meaning food</p>
-                <div className='flex gap-x-20'>
+                <div className='flex flex-col sm:flex-row gap-y-6 gap-x-20'>
                     <div className='flex flex-col gap-y-7'>
                         <div className='flex items-center gap-x-2.5'>
                             <img src={onlineOrderIcon} alt="online order icon" />

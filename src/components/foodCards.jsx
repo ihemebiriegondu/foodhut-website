@@ -5,7 +5,7 @@ import FancyButton from './fancyButton'
 
 export default function FoodCards({foodImage, orderAmount, rating, testimonialImage1, testimonialImage2, testimonialImage3, foodName, foodDescription}) {
     return (
-        <div className='w-80 flex flex-col items-center'>
+        <div className='w-72 lg:w-80 flex flex-col items-center'>
             <div className='bg-cardEllipseBg rotate-17.5 p-4 rounded-full mb-2'>
                 <div className='-rotate-17.5 bg-white rounded-full p-3 relative'>
                     <div className='w-48 h-48 overflow-hidden rounded-full'>

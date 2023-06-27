@@ -7,7 +7,7 @@ import FoodSwiper1 from './section2Components/foodSwiper1'
 export default function SecondSection() {
 
     return (
-        <section className='px-6 md:px-10 lg:px-12 xlg:px-16 mb-64 relative'>
+        <section className='px-6 md:px-10 lg:px-12 xlg:px-16 mb-24 md:mb-40 lg:mb-64 relative'>
             <div className='absolute left-0 top-12'>
                 <img src={dotIcon} alt="dots" />
             </div>
@@ -17,7 +17,9 @@ export default function SecondSection() {
             </div>
             <FoodSwiper1 />
             <div className='absolute right-0 -bottom-32'>
-                <img src={rosemary} alt="rosemary decor" />
+                <div className='w-20 sm:w-28'>
+                    <img src={rosemary} alt="rosemary decor" className='me-0' />
+                </div>
             </div>
         </section>
     )
