@@ -1,8 +1,8 @@
 import React from 'react'
-import fruitsImage from '../assests/images/5a3ac62578a9f8.png'
+import fruitsImage from '../assests/little-decors/5a3ac62578a9f8.png'
 import spiralDecor from '../assests/images/Group 8441.png'
-import chefImage from '../assests/images/Group 8481.png'
-import leaveDecor from '../assests/images/SeekPng.png'
+import chefImage from '../assests/little-decors/Group 8481.png'
+import leaveDecor from '../assests/little-decors/SeekPng.png'
 
 export default function FifthSection() {
     return (
