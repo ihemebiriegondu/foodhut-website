@@ -10,15 +10,19 @@ import mobileDownload2 from '../assests/images/Mobile app store badge (1).png'
 
 export default function FifthSection() {
     return (
-        <section className='px-6 md:px-10 lg:px-12 xlg:px-16 flex flex-col-reverse md:flex-row md:gap-x-6 lg:gap-x-16 pb-32 md:pb-20 lg:pb-0'>
+        <section className='px-6 md:px-10 lg:px-12 xlg:px-16 flex flex-col-reverse md:flex-row md:gap-x-6 lg:gap-x-16 pb-32 md:pb-6 lg:pb-20 lg:-mb-20 xlg:-mb-24 xl:-mb-48'>
             <div className='md:basis-3/5'>
                 <div className=''>
                     <h2 className='leading-10 xsm:leading-[3.5rem] xlg:leading-[4.5rem] text-4xl xsm:text-5xl xlg:text-6xl font-bold text-black mb-12'>It’s Now <span className='text-primary'>More Easy</span> to <span className='text-secondary'>Order</span> by Our Mobile <span className='text-primary'>App</span></h2>
                 </div>
                 <p className='text-lg opacity-80 mb-11'>All you need to do is downlode one of the best delivery apps, make a and most companies are opting  for mobile app devlopment for food delivery</p>
                 <div className='flex gap-x-7'>
-                    <img src={mobileDownload} alt="google download" />
-                    <img src={mobileDownload2} alt="apple download" />
+                    <div className='w-32 h-10'>
+                        <img src={mobileDownload} alt="google download" className='w-full h-full object-scale-down' />
+                    </div>
+                    <div className='w-32 h-10'>
+                        <img src={mobileDownload2} alt="apple download" className='w-full h-full object-scale-down' />
+                    </div>
                 </div>
             </div>
             <div className='md:basis-2/5 md:pb-0 pb-36 block md:hidden'>

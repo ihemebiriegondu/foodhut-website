@@ -29,7 +29,7 @@ module.exports = {
       screens: {
         'xlg': '1120px',
         'xsm': '440px'
-      }
+      },
     },
   },
   plugins: [],
