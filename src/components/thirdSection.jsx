@@ -57,7 +57,7 @@ export default function ThirdSection() {
                     </div>
                 </div>
                 <div className='mt-10'>
-                    <FancyButton content={'About Us'} color={'text-white'} background={'bg-primary'} />
+                    <FancyButton content={'About Us'} />
                 </div>
             </div>
         </section>

@@ -1,7 +1,7 @@
 import React from 'react'
 
-export default function FancyButton({ content, background, color }) {
+export default function FancyButton({ content }) {
     return (
-        <button className={`${background} ${color} py-2.5 px-5 rounded-large`}>{content}</button>
+        <button className={`bg-primary text-white py-2.5 px-5 rounded-large capitalize animation duration-300 ease-in-out hover:bg-primary hover:text-white hover:border-primary `}>{content}</button>
     )
 }

@@ -19,7 +19,7 @@ export default function Nav() {
                     <a href="/">Our Popular food</a>
                 </div>
                 <div>
-                    <FancyButton content={'Download App'} background={'bg-primary'} color={'text-white'} />
+                    <FancyButton content={'Download App'} />
                 </div>
             </div>
             <div className='block lg:hidden pe-6'>

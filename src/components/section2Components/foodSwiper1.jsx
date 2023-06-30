@@ -34,8 +34,6 @@ export default function FoodSwiper1() {
     ]
 
     const moveSwiper = (direction) => {
-        console.log(direction)
-
         const foodSwiper = document.getElementById('firstFoodSwiper');
 
         let scrollCompleted = 0;
@@ -52,7 +50,6 @@ export default function FoodSwiper1() {
                 window.clearInterval(slideVar);
                 foodSwiper.style.scrollBehavior = "smooth"
             }
-            console.log(scrollCompleted)
         }, 30);
     }
 

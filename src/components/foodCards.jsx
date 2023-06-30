@@ -36,8 +36,8 @@ export default function FoodCards({foodImage, orderAmount, rating, testimonialIm
                     <h6 className='text-2xl text-primary font-bold mb-4'>{foodName}</h6>
                     <p className='capitalize'>{foodDescription}</p>
                 </div>
-                <div className='-mb-5'>
-                    <FancyButton content={'Order Now'} background={'bg-primary'} color={'text-white'} />
+                <div className='-mb-5 cursor-pointer'>
+                    <FancyButton content={'Order Now'} />
                 </div>
             </div>
         </div>

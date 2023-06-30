@@ -48,7 +48,7 @@ export default function HeroSection() {
                     </div>
                 </div>
                 <div className='flex items-center gap-x-8'>
-                    <FancyButton content={'Login'} background={'bg-primary'} color={'text-white'} />
+                    <FancyButton content={'Login'} />
                     <button className='bg-white text-firstBlack py-2.5 px-5 rounded-large shadow-xl shadow-primary/20'>Sign Up</button>
                 </div>
                 <div className='mt-16 hidden md:flex flex-col items-start'>

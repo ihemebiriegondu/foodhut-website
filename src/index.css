@@ -20,3 +20,9 @@ body {
     -ms-overflow-style: none;
     scrollbar-width: none;
 }
+
+.navButton.active {
+    background: #F54748;
+    color: white;
+    border-color: #F54748;
+}
