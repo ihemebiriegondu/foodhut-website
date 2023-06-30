@@ -5,18 +5,18 @@ import FancyButton from './fancyButton'
 
 export default function FoodCards({foodImage, orderAmount, rating, testimonialImage1, testimonialImage2, testimonialImage3, foodName, foodDescription}) {
     return (
-        <div className='w-72 xsm:w-80 flex flex-col items-center'>
+        <div className='w-72 xsm:w-80 flex flex-col items-center bg-cardBg dark:bg-darkmodeCardBg rounded-mini'>
             <div className='bg-cardEllipseBg rotate-17.5 p-4 rounded-full mb-2'>
-                <div className='-rotate-17.5 bg-white rounded-full p-3 relative'>
+                <div className='-rotate-17.5 bg-white dark:bg-darkModeBlack rounded-full p-3 relative'>
                     <div className='w-48 h-48 overflow-hidden rounded-full'>
                         <img src={foodImage} alt="foods images" className='w-full h-full object-cover rounded-full' />
                     </div>
-                    <div className='absolute bottom-0 right-0 text-white border-4 border-white bg-yellow-300 px-4 py-4 rounded-full'>
+                    <div className='absolute bottom-0 right-0 text-white dark:text-darkModeBlack border-4 border-white dark:border-darkModeBlack bg-yellow-300 px-4 py-4 rounded-full'>
                         <p>{orderAmount}</p>
                     </div>
                 </div>
             </div>
-            <div className='bg-cardBg flex flex-col items-center rounded-mini px-8'>
+            <div className='flex flex-col items-center rounded-mini px-8 dark:text-white'>
                 <div className='flex items-center mb-7'>
                     <div className='flex me-2.5'>
                         <div className='w-9 rounded-full overflow-hidden h-9'>

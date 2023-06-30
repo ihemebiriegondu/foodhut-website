@@ -7,7 +7,7 @@ import ThirdSection from "./components/thirdSection";
 
 function App() {
   return (
-    <div className="scroll-smooth overflow-hidden">
+    <div className="scroll-smooth overflow-hidden text-firstBlack bg-white dark:bg-darkModeBlack">
       <Header />
       <SecondSection />
       <ThirdSection />

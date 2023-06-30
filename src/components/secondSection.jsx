@@ -12,8 +12,8 @@ export default function SecondSection() {
                 <img src={dotIcon} alt="dots" />
             </div>
             <div className='text-center mb-16'>
-                <h2 className='text-5xl xlg:text-6xl font-bold text-firstBlack mb-6 capitalize flex flex-wrap gap-x-3 gap-y-2 justify-center'>Today <span className='text-primary'>special</span> offers</h2>
-                <p id='todaysOffer' className='text-lg w-full sm:w-11/12 md:w-5/6 lg:w-3/4 xl:w-2/3 mx-auto capitalize'>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+                <h2 className='text-5xl xlg:text-6xl font-bold text-firstBlack dark:text-white mb-6 capitalize flex flex-wrap gap-x-3 gap-y-2 justify-center'>Today <span className='text-primary'>special</span> offers</h2>
+                <p id='todaysOffer' className='text-lg w-full sm:w-11/12 md:w-5/6 lg:w-3/4 xl:w-2/3 mx-auto dark:text-white capitalize'>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
             </div>
             <FoodSwiper1 />
             <div className='absolute right-0 -bottom-32'>

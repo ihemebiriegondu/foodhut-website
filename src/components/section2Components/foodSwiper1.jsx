@@ -65,10 +65,10 @@ export default function FoodSwiper1() {
                 }
             </div>
 
-            <div onClick={() => { moveSwiper('left') }} className='absolute left-1 lg:left-2 xlg:left-6 bottom-64 xlg:bottom-72 bg-white shadow-lg hover:shadow-xl shadow-secondary hover:shadow-secondary animation duration-300 p-2.5 md:p-3 rounded-full cursor-pointer'>
+            <div onClick={() => { moveSwiper('left') }} className='absolute left-1 lg:left-2 xlg:left-6 bottom-64 xlg:bottom-72 bg-white dark:bg-darkModeBlack shadow-lg hover:shadow-xl shadow-secondary hover:shadow-secondary animation duration-300 p-2.5 md:p-3 rounded-full cursor-pointer'>
                 <HiChevronLeft className='text-primary text-xl md:text-2xl' />
             </div>
-            <div onClick={() => { moveSwiper('right') }} className='absolute right-1 lg:right-2 xlg:right-6 bottom-64 xlg:bottom-72 bg-white shadow-lg hover:shadow-xl shadow-secondary hover:shadow-secondary animation duration-300 p-2.5 md:p-3 rounded-full cursor-pointer'>
+            <div onClick={() => { moveSwiper('right') }} className='absolute right-1 lg:right-2 xlg:right-6 bottom-64 xlg:bottom-72 bg-white dark:bg-darkModeBlack shadow-lg hover:shadow-xl shadow-secondary hover:shadow-secondary animation duration-300 p-2.5 md:p-3 rounded-full cursor-pointer'>
                 <HiChevronRight className='text-primary text-xl md:text-2xl' />
             </div>
         </div>

@@ -18,7 +18,7 @@ export default function Nav() {
                 </div>
 
                 <div className='hidden lg:flex items-center lg:gap-x-12 xlg:gap-x-14 xl:gap-x-24'>
-                    <div className='flex lg:gap-x-8 xlg:gap-x-12 xl:gap-x-12'>
+                    <div className='flex lg:gap-x-8 xlg:gap-x-12 xl:gap-x-12 dark:text-white'>
                         <a href="/#todaysOffer">Today special offers</a>
                         <a href="/">Why FoodHut</a>
                         <a href="/#ourMenu">Our Menu</a>

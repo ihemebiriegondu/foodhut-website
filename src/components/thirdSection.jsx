@@ -9,7 +9,7 @@ import ArrowVector from './section3Components/arrowVector'
 
 export default function ThirdSection() {
     return (
-        <section className='md:pe-10 lg:pe-12 xlg:pe-16 relative flex flex-col md:flex-row lg:gap-x-16 pb-32 md:pb-48 lg:pb-52'>
+        <section className='md:pe-10 lg:pe-12 xlg:pe-16 relative dark:text-white flex flex-col md:flex-row lg:gap-x-16 pb-32 md:pb-48 lg:pb-52'>
             <div className='hidden md:block absolute md:left-[240px] md:-top-12 lg:left-[340px] lg:-top-20 xlg:left-[370px] xlg:-top-14 xl:left-[425px] xl:-top-2 lg:z-20'>
                 <ArrowVector />
             </div>
@@ -23,7 +23,7 @@ export default function ThirdSection() {
             </div>
             <div className='md:basis-3/5 md:pt-16 xlg:pt-24 xl:pt-32 md:px-0 px-6'>
                 <div className='w-full xl:w-3/4'>
-                    <h2 className='text-5xl xlg:text-6xl font-bold text-black mb-5 flex flex-wrap gap-x-3 gap-y-2'>We are <span className='text-primary'>more</span> than <span className='text-secondary'>multiple</span> service</h2>
+                    <h2 className='text-5xl xlg:text-6xl font-bold text-black dark:text-white mb-5 flex flex-wrap gap-x-3 gap-y-2'>We are <span className='text-primary'>more</span> than <span className='text-secondary'>multiple</span> service</h2>
                 </div>
                 <p className='text-lg opacity-80 mb-7'>This is a type of resturent which typically serves food and drink, in addition to light refreshments such as baked goods or snacks. The term comes frome the rench word meaning food</p>
                 <div className='flex flex-col sm:flex-row gap-y-6 gap-x-20'>

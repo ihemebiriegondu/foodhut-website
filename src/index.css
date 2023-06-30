@@ -10,10 +10,7 @@ html {
 
 body {
     font-family: 'Poppins', sans-serif;
-    color: #191919;
     overflow-x: hidden;
-    /*background-color: #0D0D0D;
-    color: white;*/
 }
 
 .foodswiper::-webkit-scrollbar {
