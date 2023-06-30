@@ -18,7 +18,7 @@ export default function Nav() {
                 <div className='w-[4.875rem] h-[7.563rem] ms-1.5 dark:hidden'>
                     <a href="/"><img src={Logo} alt="food hut logo" className='w-full h-full object-contain' /></a>
                 </div>
-                <div className='w-[4.875rem] h-[7.563rem] ms-1.5 dark:block'>
+                <div className='w-[4.875rem] h-[7.563rem] ms-1.5 hidden dark:block'>
                     <a href="/"><img src={darkLogo} alt="food hut logo" className='w-full h-full object-contain' /></a>
                 </div>
 
@@ -39,7 +39,7 @@ export default function Nav() {
                 </div>
             </div>
             <div className={`absolute right-6 md:right-10 lg:right-12 xlg:right-16 left-6 md:left-10 lg:left-12 xlg:left-16 top-24 z-20 transition-all duration-400 ease ${showOffcanvas ? 'block' : 'hidden'}`}>
-                <OffCanvas />
+                <OffCanvas closeOffcanvas={() => {setShowOffcanvas(false)}} />
             </div>
         </nav>
     )
