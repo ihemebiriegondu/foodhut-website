@@ -8,15 +8,15 @@ export default function Nav() {
     return (
         <nav className='flex justify-between items-center lg:mb-8 relative z-10'>
             <div className='w-[4.875rem] h-[7.563rem] ms-1.5'>
-                <img src={Logo} alt="food hut logo" className='w-full h-full object-contain' />
+                <a href="/"><img src={Logo} alt="food hut logo" className='w-full h-full object-contain' /></a>
             </div>
 
             <div className='hidden lg:flex items-center lg:gap-x-12 xlg:gap-x-14 xl:gap-x-24'>
                 <div className='flex lg:gap-x-8 xlg:gap-x-12 xl:gap-x-12'>
-                    <a href="/">Today special offers</a>
+                    <a href="/#todaysOffer">Today special offers</a>
                     <a href="/">Why FoodHut</a>
-                    <a href="/">Our Menu</a>
-                    <a href="/">Our Popular food</a>
+                    <a href="/#ourMenu">Our Menu</a>
+                    <a href="/">Cart</a>
                 </div>
                 <div>
                     <FancyButton content={'Download App'} />

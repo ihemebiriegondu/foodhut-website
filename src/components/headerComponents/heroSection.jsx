@@ -1,5 +1,5 @@
 import React from 'react'
-import { BiSearch } from 'react-icons/bi'
+import { BiSearch, BiPlay } from 'react-icons/bi'
 
 import FancyButton from '../fancyButton'
 import SideDottedLine from './sideDottedLine'
@@ -47,12 +47,15 @@ export default function HeroSection() {
                         </div>
                     </div>
                 </div>
-                <div className='flex items-center gap-x-8'>
-                    <FancyButton content={'Login'} />
-                    <button className='bg-white text-firstBlack py-2.5 px-5 rounded-large shadow-xl shadow-primary/20'>Sign Up</button>
+                <div className='flex items-center flex-wrap gap-y-3 xsm:gap-y-0 gap-x-5 sm:gap-x-8 md:gap-x-5 lg:gap-x-8'>
+                    <FancyButton content={'Download App'} />
+                    <a href='/' className='flex items-center gap-x-3 sm:gap-x-5 md:gap-x-3 lg:gap-x-5 group'>
+                        <button className='bg-white text-firstBlack p-3 rounded-full shadow-lg group-hover:shadow-xl shadow-primary/20 group-hover:shadow-primary/20 animation duration-200 ease-in-out'><BiPlay className='text-primary text-lg' /></button>
+                        <p className='text-gray-500'>Watch Video</p>
+                    </a>
                 </div>
-                <div className='mt-16 hidden md:flex flex-col items-start'>
-                    <Slider />
+                <div>
+                    <a className='mt-16 hidden md:flex flex-col items-start w-fit' href="/#chef"><Slider /></a>
                 </div>
             </div >
             <div className='basis-1/2 relative z-20'>

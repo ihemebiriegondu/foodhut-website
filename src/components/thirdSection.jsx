@@ -13,7 +13,7 @@ export default function ThirdSection() {
             <div className='hidden md:block absolute md:left-[240px] md:-top-12 lg:left-[340px] lg:-top-20 xlg:left-[370px] xlg:-top-14 xl:left-[425px] xl:-top-2 lg:z-20'>
                 <ArrowVector />
             </div>
-            <div className='md:basis-2/5'>
+            <div className='md:basis-2/5' id='chef'>
                 <div className='-mt-72 me-0 lg:-me-60 -mb-80 hidden lg:block'>
                     <img src={chefImage} alt="chef img" />
                 </div>
