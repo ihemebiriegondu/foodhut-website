@@ -47,7 +47,7 @@ export default function HeroSection() {
                         </div>
                     </div>
                 </div>
-                <div className='flex items-center flex-wrap gap-y-3 xsm:gap-y-0 gap-x-5 sm:gap-x-8 md:gap-x-5 lg:gap-x-8'>
+                <div className='flex items-center flex-wrap gap-y-3 xsm:gap-y-0 gap-x-5 sm:gap-x-8 md:gap-x-5 lg:gap-x-8 xsm:text-base text-sm'>
                     <FancyButton content={'Download App'} />
                     <a href='/' className='flex items-center gap-x-3 sm:gap-x-5 md:gap-x-3 lg:gap-x-5 group'>
                         <button className='bg-white dark:bg-darkModeBlack text-firstBlack p-3 rounded-full shadow-lg group-hover:shadow-xl shadow-primary/20 group-hover:shadow-primary/20 animation duration-200 ease-in-out'><BiPlay className='text-primary text-lg' /></button>
