@@ -11,8 +11,8 @@ export default function SideDottedLine() {
             </div>
             <svg version="1.1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
                 width="119" height="317" viewBox="0 0 119 317" enableBackground="new 0 0 612 792" stroke="#FDC55E" strokeWidth="2" strokeLinejoin="round" strokeDasharray="8 8" >
-                <path className="path2" fill="none" stroke="#FDC55E" strokeWidth="2" strokeLinejoin="round" strokeMiterlimit="10" d="M1 316C29.5 302.167 95.2491 252.452 59 223C27 197 -18.5 289.5 59 291C136.5 292.5 138 107.5 59 1" />
-                <path className="dashed2" fill="none" stroke="white" strokeWidth="2" strokeLinejoin="round" strokeMiterlimit="10" d="M1 316C29.5 302.167 95.2491 252.452 59 223C27 197 -18.5 289.5 59 291C136.5 292.5 138 107.5 59 1" />
+                <path className="path2 stroke-secondary" fill="none" strokeWidth="2" strokeLinejoin="round" strokeMiterlimit="10" d="M1 316C29.5 302.167 95.2491 252.452 59 223C27 197 -18.5 289.5 59 291C136.5 292.5 138 107.5 59 1" />
+                <path className="dashed2 stroke-white dark:stroke-darkModeBlack" fill="none" strokeWidth="2" strokeLinejoin="round" strokeMiterlimit="10" d="M1 316C29.5 302.167 95.2491 252.452 59 223C27 197 -18.5 289.5 59 291C136.5 292.5 138 107.5 59 1" />
             </svg>
         </div>
     )

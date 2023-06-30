@@ -1,5 +1,7 @@
 import React, { useState } from 'react'
 import Logo from '../../assests/little-decors/Logo (1).png'
+import darkLogo from '../../assests/little-decors/Logo.png'
+
 import FancyButton from '../fancyButton'
 
 import { LuMenu } from 'react-icons/lu'
@@ -13,8 +15,11 @@ export default function Nav() {
     return (
         <nav>
             <div className='flex justify-between items-center lg:mb-8 relative z-10'>
-                <div className='w-[4.875rem] h-[7.563rem] ms-1.5'>
+                <div className='w-[4.875rem] h-[7.563rem] ms-1.5 dark:hidden'>
                     <a href="/"><img src={Logo} alt="food hut logo" className='w-full h-full object-contain' /></a>
+                </div>
+                <div className='w-[4.875rem] h-[7.563rem] ms-1.5 dark:block'>
+                    <a href="/"><img src={darkLogo} alt="food hut logo" className='w-full h-full object-contain' /></a>
                 </div>
 
                 <div className='hidden lg:flex items-center lg:gap-x-12 xlg:gap-x-14 xl:gap-x-24'>
@@ -28,7 +33,7 @@ export default function Nav() {
                         <FancyButton content={'Download App'} />
                     </div>
                 </div>
-                <div className='block lg:hidden' onClick={() => { setShowOffcanvas(!showOffcanvas) }}>
+                <div className='block lg:hidden dark:text-white' onClick={() => { setShowOffcanvas(!showOffcanvas) }}>
                     <LuMenu className={`text-4xl mt-3 ${showOffcanvas ? 'hidden' : 'block'}`} />
                     <IoClose className={`text-4xl mt-3 ${showOffcanvas ? 'block' : 'hidden'}`} />
                 </div>

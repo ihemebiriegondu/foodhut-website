@@ -4,7 +4,7 @@ import FancyButton from './fancyButton'
 
 export default function Footer() {
     return (
-        <footer className='px-6 md:px-10 lg:px-12 xlg:px-16 xl:px-32 pb-9'>
+        <footer className='px-6 md:px-10 lg:px-12 xlg:px-16 xl:px-32 pb-9 dark:text-white pt-16 md:pt-20'>
             <div className='flex flex-col sm:grid sm:grid-cols-2 xlg:flex xlg:flex-row xlg:justify-between gap-x-10 gap-y-8 pb-24'>
                 <div className='basis-1/3'>
                     <h5 className='text-primary text-3xl font-semibold mb-2.5'>Foodhut</h5>
@@ -39,7 +39,7 @@ export default function Footer() {
                     <h6 className='text-2xl text-primary font-semibold mb-4 xlg:mb-9'>Get in touch</h6>
                     <p className='text-lg'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</p>
                     <div className='flex gap-x-2 md:gap-x-3.5 mt-7'>
-                        <input type="email" placeholder='Email' className='outline-0 border-0 bg-black/10 px-6 py-4 rounded-large xlg:w-auto sm:w-1/2 w-3/4'/>
+                        <input type="email" placeholder='Email' className='outline-0 border-0 bg-black/10 dark:bg-white/10 px-6 py-4 rounded-large xlg:w-auto sm:w-1/2 w-3/4'/>
                         <FancyButton content={'Subscribe'} />
                     </div>
                 </div>

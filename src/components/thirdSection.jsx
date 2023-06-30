@@ -1,6 +1,8 @@
 import React from 'react'
 import chefImage from '../assests/images/Group 8480.png'
+import darkChefImage from '../assests/images/Group 8483.png'
 import mobileChefImage from '../assests/images/Group 8472 (1).png'
+import darkMobileChefImage from '../assests/images/Group 8472.png'
 import onlineOrderIcon from '../assests/images/image 15.png'
 import timerangeIcon from '../assests/images/image 17.png'
 import bookingIcon from '../assests/images/image 18.png'
@@ -9,16 +11,18 @@ import ArrowVector from './section3Components/arrowVector'
 
 export default function ThirdSection() {
     return (
-        <section className='md:pe-10 lg:pe-12 xlg:pe-16 relative dark:text-white flex flex-col md:flex-row lg:gap-x-16 pb-32 md:pb-48 lg:pb-52'>
+        <section className='bg-lastSectionBg md:pe-10 lg:pe-12 xlg:pe-16 relative dark:text-white flex flex-col md:flex-row lg:gap-x-16 pb-16 md:pb-24'>
             <div className='hidden md:block absolute md:left-[240px] md:-top-12 lg:left-[340px] lg:-top-20 xlg:left-[370px] xlg:-top-14 xl:left-[425px] xl:-top-2 lg:z-20'>
                 <ArrowVector />
             </div>
             <div className='md:basis-2/5' id='chef'>
                 <div className='-mt-72 me-0 lg:-me-60 -mb-80 hidden lg:block'>
-                    <img src={chefImage} alt="chef img" />
+                    <img src={chefImage} alt="chef img" className='dark:hidden' />
+                    <img src={darkChefImage} alt="chef img" className='hidden dark:block' />
                 </div>
                 <div className='-mt-56 sm:-mt-72 me-0 -mb-72 block lg:hidden'>
-                    <img src={mobileChefImage} alt="chef img" className='-me-20 md:me-0' />
+                    <img src={mobileChefImage} alt="chef img" className='-me-20 md:me-0 dark:hidden' />
+                    <img src={darkMobileChefImage} alt="chef img" className='-me-20 md:me-0 hidden dark:block' />
                 </div>
             </div>
             <div className='md:basis-3/5 md:pt-16 xlg:pt-24 xl:pt-32 md:px-0 px-6'>

@@ -10,8 +10,8 @@ export default function MobileSideDottedLine() {
             </div>
             <svg version="1.1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
                 width="46" height="203" viewBox="0 0 46 203" enableBackground="new 0 0 612 792" stroke="#FDC55E" strokeWidth="2" strokeLinejoin="round" strokeDasharray="8 8" >
-                <path className="path2" fill="none" stroke="#FDC55E" strokeWidth="2" strokeLinejoin="round" strokeMiterlimit="10" d="M1 202C15.4101 194.974 48.654 169.722 30.3259 154.762C14.1461 141.556 -8.85955 188.54 30.3259 189.302C69.5113 190.063 10.5 52.5 30.3259 1" />
-                <path className="dashed2" fill="none" stroke="white" strokeWidth="2" strokeLinejoin="round" strokeMiterlimit="10" d="M1 202C15.4101 194.974 48.654 169.722 30.3259 154.762C14.1461 141.556 -8.85955 188.54 30.3259 189.302C69.5113 190.063 10.5 52.5 30.3259 1" />
+                <path className="path2 stroke-secondary" fill="none" strokeWidth="2" strokeLinejoin="round" strokeMiterlimit="10" d="M1 202C15.4101 194.974 48.654 169.722 30.3259 154.762C14.1461 141.556 -8.85955 188.54 30.3259 189.302C69.5113 190.063 10.5 52.5 30.3259 1" />
+                <path className="dashed2 stroke-white dark:stroke-darkModeBlack" fill="none" stroke="white" strokeWidth="2" strokeLinejoin="round" strokeMiterlimit="10" d="M1 202C15.4101 194.974 48.654 169.722 30.3259 154.762C14.1461 141.556 -8.85955 188.54 30.3259 189.302C69.5113 190.063 10.5 52.5 30.3259 1" />
             </svg>
         </div>
     )

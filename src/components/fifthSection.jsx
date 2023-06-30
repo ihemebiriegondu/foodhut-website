@@ -1,6 +1,6 @@
 import React from 'react'
 import fruitsImage from '../assests/little-decors/5a3ac62578a9f8.png'
-import spiralDecor from '../assests/images/Group 8441.png'
+import spiralDecor from '../assests/little-decors/Group 8441.png'
 import chefImage from '../assests/images/Group 8482.png'
 import chefImageMobile from '../assests/images/Group 8481.png'
 import leaveDecor from '../assests/little-decors/SeekPng.png'
@@ -10,10 +10,10 @@ import mobileDownload2 from '../assests/images/Mobile app store badge (1).png'
 
 export default function FifthSection() {
     return (
-        <section className='px-6 md:px-10 lg:px-12 xlg:px-16 flex flex-col-reverse md:flex-row md:gap-x-6 lg:gap-x-16 pb-32 md:pb-6 lg:pb-20 lg:-mb-20 xlg:-mb-24 xl:-mb-48'>
+        <section className='bg-lastSectionBg px-6 md:px-10 lg:px-12 xlg:px-16 flex flex-col-reverse md:flex-row md:gap-x-6 lg:gap-x-16 pb-16 md:pb-0 lg:h-[632px] dark:text-white'>
             <div className='md:basis-3/5'>
                 <div className=''>
-                    <h2 className='leading-10 xsm:leading-[3.5rem] xlg:leading-[4.5rem] text-4xl xsm:text-5xl xlg:text-6xl font-bold text-black mb-12'>It’s Now <span className='text-primary'>More Easy</span> to <span className='text-secondary'>Order</span> by Our Mobile <span className='text-primary'>App</span></h2>
+                    <h2 className='leading-10 xsm:leading-[3.5rem] xlg:leading-[4.5rem] text-4xl xsm:text-5xl xlg:text-6xl font-bold text-black dark:text-white mb-12'>It’s Now <span className='text-primary'>More Easy</span> to <span className='text-secondary'>Order</span> by Our Mobile <span className='text-primary'>App</span></h2>
                 </div>
                 <p className='text-lg opacity-80 mb-11'>All you need to do is downlode one of the best delivery apps, make a and most companies are opting  for mobile app devlopment for food delivery</p>
                 <div className='flex gap-x-7'>
