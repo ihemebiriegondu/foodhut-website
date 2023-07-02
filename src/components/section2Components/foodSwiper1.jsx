@@ -9,23 +9,24 @@ export default function FoodSwiper1() {
     const [fetchError, setFetchError] = useState('');
     const [todayOffers, setTodayOffers] = useState('');
 
-
     const [foodCardWidth, setfoodCardWidth] = useState(340);
     useEffect(() => {
         //function to fetch the foods from supabase database
         const fetchFoodData = async () => {
             const { data, error } = await supabase
-                .from('todayOffers').select();
+                .from('todayOffers')
+                .select()
+                .order('id')
 
             if (error) {
                 setFetchError(error)
-                console.log(error)
+                //console.log(error)
                 //incase data has been fetched before, it would be cleared
                 setTodayOffers('')
             }
             if (data) {
                 setTodayOffers(data);
-                console.log(data)
+                //console.log(data)
                 setFetchError('');
             }
         }
