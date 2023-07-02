@@ -1,14 +1,35 @@
 import React, { useState, useEffect } from 'react'
+import supabase from '../../supabaseClient'
 import FoodCards from '../foodCards'
 import { HiChevronRight, HiChevronLeft } from 'react-icons/hi'
 
-import kebab from '../../assests/images/unsplash_UC0HZdUitWY.png'
-import reviewImg1 from '../../assests/images/unsplash_7Sz71zuuW4k.png'
-
 export default function FoodSwiper1() {
 
-    const [foodCardWidth, setfoodCardWidth] = useState(340)
+    //console.log(supabase)
+    const [fetchError, setFetchError] = useState('');
+    const [todayOffers, setTodayOffers] = useState('');
+
+
+    const [foodCardWidth, setfoodCardWidth] = useState(340);
     useEffect(() => {
+        //function to fetch the foods from supabase database
+        const fetchFoodData = async () => {
+            const { data, error } = await supabase
+                .from('todayOffers').select();
+
+            if (error) {
+                setFetchError(error)
+                console.log(error)
+                //incase data has been fetched before, it would be cleared
+                setTodayOffers('')
+            }
+            if (data) {
+                setTodayOffers(data);
+                console.log(data)
+                setFetchError('');
+            }
+        }
+        fetchFoodData();
 
         //function to set the scroll width movement in the moveSwiper function
         let setfoodCardWidthFunction = (screen) => {
@@ -22,16 +43,6 @@ export default function FoodSwiper1() {
         setfoodCardWidthFunction(screen);
         screen.addListener(setfoodCardWidthFunction)
     }, [])
-
-
-    const todayOffers = [
-        { foodImage: kebab, orderAmount: '105', rating: '4.5', testimonialImage1: reviewImg1, testimonialImage2: reviewImg1, testimonialImage3: reviewImg1, foodName: 'Kebab', foodDescription: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry' },
-        { foodImage: kebab, orderAmount: '105', rating: '4.5', testimonialImage1: reviewImg1, testimonialImage2: reviewImg1, testimonialImage3: reviewImg1, foodName: 'Kebab', foodDescription: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry' },
-        { foodImage: kebab, orderAmount: '105', rating: '4.5', testimonialImage1: reviewImg1, testimonialImage2: reviewImg1, testimonialImage3: reviewImg1, foodName: 'Kebab', foodDescription: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry' },
-        { foodImage: kebab, orderAmount: '105', rating: '4.5', testimonialImage1: reviewImg1, testimonialImage2: reviewImg1, testimonialImage3: reviewImg1, foodName: 'Kebab', foodDescription: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry' },
-        { foodImage: kebab, orderAmount: '105', rating: '4.5', testimonialImage1: reviewImg1, testimonialImage2: reviewImg1, testimonialImage3: reviewImg1, foodName: 'Kebab', foodDescription: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry' },
-        { foodImage: kebab, orderAmount: '105', rating: '4.5', testimonialImage1: reviewImg1, testimonialImage2: reviewImg1, testimonialImage3: reviewImg1, foodName: 'Kebab', foodDescription: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry' },
-    ]
 
     const moveSwiper = (direction) => {
         const foodSwiper = document.getElementById('firstFoodSwiper');
@@ -57,11 +68,20 @@ export default function FoodSwiper1() {
         <div className='overflow-x-scroll pb-6 scroll-smooth foodswiper' id='firstFoodSwiper'>
             <div className='flex gap-x-5'>
                 {
-                    todayOffers.map((offer, id) => (
-                        <div className='basis-1/4'>
-                            <FoodCards key={id} foodImage={offer.foodImage} orderAmount={offer.orderAmount} rating={offer.rating} testimonialImage1={offer.testimonialImage1} testimonialImage2={offer.testimonialImage2} testimonialImage3={offer.testimonialImage3} foodName={offer.foodName} foodDescription={offer.foodDescription} />
+                    fetchError && (
+                        <div>
+                            <p>No food available today</p>
                         </div>
-                    ))
+                    )
+                }
+                {
+                    todayOffers && (
+                        todayOffers.map(offer => (
+                            <div className='basis-1/4' key={offer.id}>
+                                <FoodCards foodImage={offer.image} orderAmount={offer.price} rating={offer.rating} testimonialImage1={offer.testimg1} testimonialImage2={offer.testimg2} testimonialImage3={offer.testimg3} foodName={offer.name} foodDescription={offer.description} />
+                            </div>
+                        ))
+                    )
                 }
             </div>
 
