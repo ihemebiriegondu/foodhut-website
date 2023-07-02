@@ -7,7 +7,7 @@ export default function OffCanvas({closeOffcanvas}) {
                 <li><a href="/#todaysOffer">Today special offers</a></li>
                 <li><a href="/">Why FoodHut</a></li>
                 <li><a href="/#ourMenu">Our Menu</a></li>
-                <li><a href="/">Cart</a></li>
+                <li><a href="/">Our Popular food</a></li>
             </ul>
         </div>
     )

@@ -27,7 +27,7 @@ export default function Nav() {
                         <a href="/#todaysOffer">Today special offers</a>
                         <a href="/">Why FoodHut</a>
                         <a href="/#ourMenu">Our Menu</a>
-                        <a href="/">Cart</a>
+                        <a href="/">Our Popular food</a>
                     </div>
                     <div>
                         <FancyButton content={'Download App'} />

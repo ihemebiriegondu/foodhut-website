@@ -41,7 +41,7 @@ export default function HeroSection() {
                     <p className='text-xl xlg:text-2xl tracking-tight mb-7 dark:text-white'>Best cooks and best delivery guys all at your service. Hot tasty food will reach you in 60 minutes.</p>
                     <div className='border border-firstBlack dark:border-white rounded-large overflow-hidden flex items-center px-4 mb-9 bg-white dark:bg-darkModeBlack'>
                         <BiSearch className='text-2xl dark:text-white' />
-                        <input type="text" placeholder='Search food' className='w-full py-4 px-3 outline-0 border-0 placeholder:firstBlack dark:bg-darkModeBlack' />
+                        <input type="text" placeholder='Search food' className='w-full py-4 px-3 outline-0 border-0 placeholder:firstBlack dark:bg-darkModeBlack dark:text-white' />
                         <div className='p-2 bg-secondary rounded-full'>
                             <BiSearch className='text-white dark:text-darkModeBlack text-2xl' />
                         </div>
