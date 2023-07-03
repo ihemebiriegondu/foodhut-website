@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 export default function OffCanvas({closeOffcanvas}) {
     return (
@@ -7,7 +8,7 @@ export default function OffCanvas({closeOffcanvas}) {
                 <li><a href="/#todaysOffer">Today special offers</a></li>
                 <li><a href="/">Why FoodHut</a></li>
                 <li><a href="/#ourMenu">Our Menu</a></li>
-                <li><a href="/">Our Popular food</a></li>
+                <li><Link to={'/foodspin'}>Our Popular food</Link></li>
             </ul>
         </div>
     )

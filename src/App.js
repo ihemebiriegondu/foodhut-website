@@ -1,20 +1,20 @@
-import FifthSection from "./components/fifthSection";
-import Footer from "./components/footer";
-import ForthSection from "./components/forthSection";
-import Header from "./components/header";
-import SecondSection from "./components/secondSection";
-import ThirdSection from "./components/thirdSection";
+import { BrowserRouter as Router, Routes, Route} from "react-router-dom";
+
+import Home from "./pages/Home";
+import Foodspin from "./pages/Foodspin";
+import SignIn from "./pages/SignIn";
+import Login from "./pages/Login";
 
 function App() {
   return (
-    <div className="scroll-smooth overflow-hidden text-firstBlack bg-white dark:bg-darkModeBlack">
-      <Header />
-      <SecondSection />
-      <ThirdSection />
-      <ForthSection />
-      <FifthSection />
-      <Footer />
-    </div>
+    <Router>
+      <Routes>
+        <Route path={'/'} element={<Home />} />
+        <Route path="/foodspin" element={<Foodspin />} />
+        <Route path="/sign in" element={<SignIn />} />
+        <Route path="/login" element={<Login />} />
+      </Routes>
+    </Router>
   );
 }
 

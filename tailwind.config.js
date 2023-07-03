@@ -9,6 +9,7 @@ module.exports = {
         'primary': '#F54748',
         'firstBlack': '#191919',
         'secondBlack': '#2E2E2E',
+        'thirdBlack': '#545454',
         'secondary': '#FDC55E',
         'darkModeBlack': '#0D0D0D',
       },
@@ -21,6 +22,7 @@ module.exports = {
       },
       borderRadius: {
         'large': '6.25rem',
+        'micro': '36px',
         'mini': '20px'
       },
       fontFamily: {
