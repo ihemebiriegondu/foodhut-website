@@ -1,15 +1,22 @@
 import React from 'react'
 import loginImg2 from '../assests/images/top-view-table-full-delicious-food-composition.jpg'
+import logo from '../assests/little-decors/Logo.png'
 import Buttons from '../components/loginSigninComponents/buttons'
 import { Link } from 'react-router-dom'
 
 export default function SignIn() {
   return (
     <div className='bg-loginBg bg-cover h-full absolute top-0 bottom-0 w-full flex flex-col justify-center py-4 px-2 xsm:px-4'>
+      <div className='w-[4.875rem] h-[7.563rem] absolute z-0 -top-3 left-5 block sm:hidden'>
+        <a href="/"><img src={logo} alt="food hut logo" className='w-full h-full object-contain' /></a>
+      </div>
       <div className='sm:flex rounded-mini overflow-x-hidden bg-white/10 dark:bg-black/20 shadow-md h-full'>
         <div className='basis-3/5 h-full hidden sm:block'>
           <div className='w-full h-full overflow-hidden'>
-            <img src={loginImg2} alt='' className='w-full h-full object-cover' />
+            <img src={loginImg2} alt='login img' className='w-full h-full object-cover' />
+            <div className='w-[4.875rem] h-[7.563rem] absolute z-40 top-0 left-10'>
+              <a href="/"><img src={logo} alt="food hut logo" className='w-full h-full object-contain' /></a>
+            </div>
           </div>
         </div>
         <div className='xsm:basis-2/5 px-6 xsm:px-8 sm:px-12 lg:px-16 py-16'>

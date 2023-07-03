@@ -26,6 +26,9 @@ module.exports = {
         'micro': '36px',
         'mini': '20px'
       },
+      fontSize: {
+        '4.5xl': '44px'
+      },
       fontFamily: {
         'inter': ['Inter', 'sans-serif']
       },
