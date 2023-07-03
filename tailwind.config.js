@@ -39,6 +39,9 @@ module.exports = {
         'xlg': '1120px',
         'xsm': '440px'
       },
+      spacing: {
+        '68': '268px'
+      }
     },
   },
   plugins: [],
