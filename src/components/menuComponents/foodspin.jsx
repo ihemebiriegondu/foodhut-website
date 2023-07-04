@@ -1,4 +1,6 @@
-import React from 'react'
+import React, { useState } from 'react'
+import '../../assests/animationstyles.css'
+
 import FancyButton from '../fancyButton'
 import { AiOutlineArrowDown } from 'react-icons/ai'
 
@@ -13,6 +15,25 @@ import food8 from '../../assests/images/pngegg (1).png'
 import food9 from '../../assests/images/pngegg3.png'
 
 export default function Foodspin() {
+
+    const [focusedImg, setFocusedImg] = useState(food1);
+
+    const focusFood = () => {
+        const middleFood = document.getElementsByClassName('left-2/5 right-3/5 top-auto bottom-70')
+        const focusedImgId = document.getElementById('focusedImg');
+
+        for (let i = 0; i < middleFood.length; i++) {
+            //console.log(middleFood[i])
+            setFocusedImg(middleFood[i].children[0].src)
+            console.log(focusedImg)
+        }
+
+        //this gives the dislay image its shrinking and enlarging animation
+        focusedImgId.classList.add('middleImage');
+        setTimeout(() => {
+            focusedImgId.classList.remove('middleImage');
+        }, 500)
+    }
 
     const spinFood = (direction) => {
         //console.log(direction)
@@ -36,6 +57,7 @@ export default function Foodspin() {
                     foods[i].className = firstClass
                 }
             }
+            focusFood();
         }
         //else if the direction is front, i got all the food from the last to the first instead(and also got the food immediately before it) and interchanged them
         //if there is no food before it (when the loop has gotten to the first image), it gives the class of the last image to the first image
@@ -54,13 +76,15 @@ export default function Foodspin() {
                     foods[i].className = lastClass
                 }
             }
+            focusFood();
         }
     }
 
 
+
     return (
         <div className='dark:text-white flex items-center gap-x-9 py-32'>
-            <div className='absolute z-20 -right-44 bottom-64 w-[1177px] h-[1177px] bg-primary/10 rounded-full '>
+            <div className='absolute z-20 -right-44 bottom-64 w-[1177px] h-[1177px] bg-primary/10 rounded-full overflow-hidden'>
                 <div className='absolute left-auto right-68 top-auto bottom-12 z-20'>
                     <img src={foodEllipse} alt="food spin img" className='w-full h-full object-cover' />
                 </div>
@@ -104,7 +128,7 @@ export default function Foodspin() {
                         <AiOutlineArrowDown className='text-primary text-xl md:text-2xl' />
                     </div>
                     <div className='w-72 h-72'>
-                        <img src={food1} alt="food spin img" className='w-full h-full object-cover' />
+                        <img src={focusedImg} id='focusedImg' alt="food spin img" className='w-full h-full object-cover' />
                     </div>
                     <div onClick={() => { spinFood('front') }} className='w-fit bg-white dark:bg-darkModeBlack shadow-sm hover:shadow-md shadow-secondary hover:shadow-secondary animation duration-300 p-2.5 md:p-3 rounded-full cursor-pointer'>
                         <AiOutlineArrowDown className='text-primary text-xl md:text-2xl' />

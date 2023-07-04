@@ -175,3 +175,23 @@
         fill: #FDC55E;
     }
 }
+
+
+/*foodspin*/
+.middleImage {
+    animation-name: shrink;
+    animation-duration: 0.5s;
+}
+
+@keyframes shrink {
+    from {
+        transform: scale(0.1);
+    }
+
+    to {
+        transform: scale(1);
+    }
+}
+
+/*
+    animation: name duration timing-function delay iteration-count direction fill-mode;*/
