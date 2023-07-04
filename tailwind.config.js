@@ -36,16 +36,30 @@ module.exports = {
         '17.5': '178.687deg'
       },
       screens: {
+        '1xl': '1460px',
         'xlg': '1120px',
+        'smd': '700px',
         'xsm': '440px'
       },
       spacing: {
+        '50': '200px',
         '54': '215px',
         '68': '268px',
         '70': '278px',
         '82': '325px',
+        '1/5': '19%',
+        '1/4.5': '22%',
         '2/5': '48%',
-        '3/5': '52%'
+        '3/5': '52%',
+        'twoForth': '45%',
+        'threeForth': '55%',
+        'calcTop': 'calc((100vw/2) - 5px)',
+        'calcTop1': 'calc((100vw/2.75) - 15px)',
+        'calc1': 'calc((100vw/3.9) - 5px)',
+        'calc11': 'calc((100vw/8.6) - 5px)',
+        'calc2': 'calc((100vw/2.2) - 10px)',
+        'calc22': 'calc((100vw/3.4) - 10px)',
+        'calc4': 'calc((100vw/2.4) - 3px)',
       }
     },
   },
