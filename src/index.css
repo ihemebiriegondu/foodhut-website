@@ -8,6 +8,12 @@ html {
     scroll-behavior: smooth;
 }
 
+@media (prefers-color-scheme: dark) {
+    html {
+        background-color: #0D0D0D;
+    }
+  }
+
 body {
     font-family: 'Poppins', sans-serif;
     overflow-x: hidden;
