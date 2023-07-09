@@ -1,16 +1,36 @@
-import React from 'react'
+import React, { useState } from 'react'
 import loginImg2 from '../assests/images/top-view-table-full-delicious-food-composition.jpg'
 import logo from '../assests/little-decors/Logo.png'
 import { FcGoogle } from 'react-icons/fc'
 import Buttons from '../components/loginSigninComponents/buttons'
 import { Link, useNavigate } from 'react-router-dom'
 
+import { useUserAuth } from '../context/SupabaseAuth'
+
 export default function Login() {
+    const [email, setEmail] = useState('');
+    const [password, setPassword] = useState('');
+
+    const { logIn, googleLogin } = useUserAuth();
     const navigate = useNavigate();
 
-    const loginFormFunction = (e) => {
+    const loginFormFunction = async (e) => {
         e.preventDefault();
-        navigate('/dashboard')
+
+        try {
+            await logIn(email, password)
+            navigate('/dashboard')
+        } catch (err) {
+            console.log(err)
+        }
+    }
+
+    const googleLoginFunction = async () => {
+        try {
+            await googleLogin()
+        } catch (err){
+            console.log(err)
+        }
     }
 
     return (
@@ -39,11 +59,11 @@ export default function Login() {
                     <form onSubmit={(e) => { loginFormFunction(e) }}>
                         <div className='mb-8'>
                             <p className='text-firstBlack dark:text-zinc-200 mb-2'>Username or Email</p>
-                            <input type='text' className='w-full bg-transparent outline-0 border-0 border-b-2 border-b-firstBlack dark:border-b-zinc-200 dark:text-white' />
+                            <input onChange={(e) => { setEmail(e.target.value) }} type='text' className='w-full bg-transparent outline-0 border-0 border-b-2 border-b-firstBlack dark:border-b-zinc-200 dark:text-white' />
                         </div>
                         <div className='mb-8'>
                             <p className='text-firstBlack dark:text-zinc-200 mb-2'>Password</p>
-                            <input type='password' className='w-full bg-transparent outline-0 border-0 border-b-2 border-b-firstBlack dark:border-b-zinc-200 dark:text-white' />
+                            <input onChange={(e) => { setPassword(e.target.value) }} type='password' className='w-full bg-transparent outline-0 border-0 border-b-2 border-b-firstBlack dark:border-b-zinc-200 dark:text-white' />
                         </div>
                         <div className='flex items-center justify-between mb-8'>
                             <p className='text-sm underline dark:text-white'>Forgot Password</p>
@@ -51,7 +71,7 @@ export default function Login() {
                         </div>
                     </form>
                     <div className='mb-7'>
-                        <button className='bg-gray-300 dark:bg-gray-200 w-full flex items-center gap-x-2 justify-center text-thirdBlack dark:text-darkModeBlack py-2.5 px-5 
+                        <button onClick={() => {googleLoginFunction()}} className='bg-gray-300 dark:bg-gray-200 w-full flex items-center gap-x-2 justify-center text-thirdBlack dark:text-darkModeBlack py-2.5 px-5 
                         rounded-micro animation duration-300 ease-in-out'><FcGoogle className='text-lg' /> Login with Google</button>
                     </div>
                     <p className='text-xs text-center text-slate-900 dark:text-slate-200 mb-5'>Terms and Conditions & Privacy Policy</p>
