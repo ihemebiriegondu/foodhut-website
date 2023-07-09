@@ -1,5 +1,5 @@
-import React, { useState, useEffect } from 'react'
-import { useNavigate } from 'react-router-dom';
+import React from 'react'
+//import { useNavigate } from 'react-router-dom';
 import Dashboardnav from '../components/dashboardComponents/dashboardnav'
 
 import { useUserAuth } from '../context/SupabaseAuth';
@@ -7,7 +7,7 @@ import { useUserAuth } from '../context/SupabaseAuth';
 export default function Dashboard() {
   const { user } = useUserAuth();
 
-  const navigate = useNavigate();
+  //const navigate = useNavigate();
   console.log(user)
 
 
