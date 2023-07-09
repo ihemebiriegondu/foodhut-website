@@ -1,8 +1,7 @@
 import React, { useState } from 'react'
 import '../../assests/animationstyles.css'
 
-import FancyButton from '../fancyButton'
-import { AiOutlineArrowDown } from 'react-icons/ai'
+import { AiOutlineArrowDown, AiFillCaretDown, AiFillCaretUp, AiOutlineShoppingCart } from 'react-icons/ai'
 
 import foodEllipse from '../../assests/images/Ellipse 4 (1).png'
 import food1 from '../../assests/images/pngfind 1.png'
@@ -17,6 +16,7 @@ import food9 from '../../assests/images/pngegg3.png'
 export default function Foodspin() {
 
     const [focusedImg, setFocusedImg] = useState(food1);
+    const [orderNumber, setOrderNumber] = useState(0);
 
     const focusFood = () => {
         const middleFood = document.querySelector('.mid')
@@ -118,7 +118,28 @@ export default function Foodspin() {
                 <h1 className='text-4xl lg:text-4.5xl font-semibold text-primary'>$35</h1>
                 <h3 className='text-3xl lg:text-4xl font-medium mb-3'>Asian Cucumber Salad</h3>
                 <p className='text-sm mb-7'>Asian Cucumber Salad Recipe made with crunchy cucumber, onion, rice wine vinegar, and a few secret ingredients!</p>
-                <FancyButton content={'ORDER NOW'} />
+
+                <div className='flex items-center gap-x-4'>
+                    <div className='flex items-center px-4 py-1.5 border-2 border-primary rounded-large outline-0'>
+                        <AiFillCaretDown className='text-2xl border-e pe-2 border-black/50 dark:border-white/50 cursor-pointer'
+                            onClick={() => {
+                                if (orderNumber > 0) {
+                                    setOrderNumber(orderNumber - 1)
+                                }
+                            }}
+                        />
+                        <p className='text-2xl px-4'>{orderNumber}</p>
+                        <AiFillCaretUp className='text-2xl border-s ps-2 border-black/50 dark:border-white/50 cursor-pointer'
+                            onClick={() => {
+                                setOrderNumber(orderNumber + 1)
+                            }}
+                        />
+                    </div>
+                    <button className={`bg-primary flex items-center gap-x-2 text-white dark:text-darkModeBlack py-1 ps-1 pe-5 rounded-large capitalize animation duration-300 ease-in-out hover:bg-primary hover:text-white hover:border-primary`}>
+                        <p className='bg-secondary py-2.5 px-2 rounded-full'><AiOutlineShoppingCart className='me-1 text-xl' /></p>
+                        <p className='text-sm'>Add to cart</p>
+                    </button>
+                </div>
             </div>
             <div className='lg:basis-3/5 xl:basis-2/3 1xl:basis-3/4 w-full md:w-auto pt-44 relative z-30'>
 

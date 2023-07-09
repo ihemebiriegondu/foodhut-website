@@ -19,7 +19,9 @@ export default function Login() {
 
         try {
             await logIn(email, password)
-            navigate('/dashboard')
+            .then(
+                navigate('/dashboard')
+            )
         } catch (err) {
             console.log(err)
         }
